@@ -1,0 +1,134 @@
+@charset "UFT-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --branco-claro: #E8D7F1;
+    --roxo-claro: #D3BCCC;
+    --roxo: #A167A5;
+    --roxo-escuro: #4A306D;
+    --azul-escuro: #0E273C;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(to bottom, var(--preto), var(--roxo-escuro), var(--roxo), var(--roxo-escuro));
+}
+
+ header > h1 > picture > img {
+    max-width: 100%;
+    min-height: 20%;
+    border-radius: 0px;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+header > h1 > img {
+    max-width: 60%;
+    min-width: 30%;
+}
+
+main {
+    background-color: var(--branco-claro);
+    max-width: 800px;
+    min-width: 400px;
+    border-radius: 15px;
+    margin: auto;
+    box-shadow: 5px 3px 8px #0000002d;
+}
+
+article > header > h1 {
+    text-align: center;
+    font-size: 2em;
+    color: var(--branco);
+    background-color: var(--roxo-escuro);
+    border-radius: 13px 13px 0px 0px;
+    padding-top: 10px;
+}
+
+article > section > h2 {
+    margin: 20px 15px 0px;
+    background-image: linear-gradient(to right, var(--roxo-escuro), var(--roxo));
+    padding: 3px;
+    border-radius: 10px;
+    color: var(--branco);
+}
+
+article > section > p {
+    margin: 15px 15px 0px;
+    line-height: 25px;
+    text-align: justify;
+    font-weight: normal;
+}
+
+article > section > p > img {
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 20px;
+    border: groove;
+    border-color: var(--roxo);
+}
+
+article > section > aside > p {
+    line-height: 20px;
+    margin: 0px 0px 20px 15px;
+    padding-bottom: 10px;
+    color: var(--branco-claro);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+}
+
+article > section > aside {
+    background-color: var(--roxo-escuro);
+    margin-top: 20px;
+}
+
+aside.aside-2 {
+    background-color: var(--preto);
+}
+
+main > aside > p > img {
+    max-width: 350px;
+    min-width: 200px;
+    border-radius: 20px;
+    border: solid;
+    border-color: var(--roxo-escuro);
+    margin: 20px 0px 20px 15px;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--roxo-escuro);
+    color: var(--branco-claro);
+}
+
+img.foto-3 {
+    max-width: 320px;
+    min-width: 200px;
+    border-radius: 20px;
+    margin: 20px 0px 20px 15px;
+    border: solid;
+    border-color: var(--roxo);
+}
+
+div.video {
+    position: relative;
+    padding: 10px;
+    padding-bottom: 59%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
