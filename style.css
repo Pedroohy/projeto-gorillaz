@@ -12,19 +12,23 @@
     --roxo-claro: #D3BCCC;
     --roxo: #A167A5;
     --roxo-escuro: #4A306D;
-    --azul-escuro: #0E273C;
+    --roxo-preto: #2f1f45;
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(to bottom, var(--preto), var(--roxo-escuro), var(--roxo), var(--roxo-escuro));
+    background-image: linear-gradient(to bottom, var(--preto), var(--roxo-escuro), var(--roxo), var(--roxo-escuro) , var(--preto));
 }
 
- header > h1 > picture > img {
-    max-width: 100%;
+ header > h1 > picture > img.picture {
+    max-width: 99%;
     min-height: 20%;
-    border-radius: 0px;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--roxo-preto);
 }
+
+
 
 header > h1 {
     text-align: center;
@@ -42,6 +46,9 @@ main {
     border-radius: 15px;
     margin: auto;
     box-shadow: 5px 3px 8px #0000002d;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--roxo-preto);
 }
 
 article > header > h1 {
@@ -49,7 +56,7 @@ article > header > h1 {
     font-size: 2em;
     color: var(--branco);
     background-color: var(--roxo-escuro);
-    border-radius: 13px 13px 0px 0px;
+    border-radius: 12px 12px 0px 0px;
     padding-top: 10px;
 }
 
@@ -63,9 +70,10 @@ article > section > h2 {
 
 article > section > p {
     margin: 15px 15px 0px;
-    line-height: 25px;
+    line-height: 23px;
     text-align: justify;
     font-weight: normal;
+    text-shadow:  5px 3px 8px #0000004f;
 }
 
 article > section > p > img {
@@ -78,7 +86,7 @@ article > section > p > img {
 
 article > section > aside > p {
     line-height: 20px;
-    margin: 0px 0px 20px 15px;
+    margin: 0px 15px 15px 15px;
     padding-bottom: 10px;
     color: var(--branco-claro);
     font-family: 'Courier New', Courier, monospace;
@@ -88,6 +96,11 @@ article > section > aside > p {
 article > section > aside {
     background-color: var(--roxo-escuro);
     margin-top: 20px;
+    
+}
+
+article > section > aside > p {
+    text-shadow:  5px 3px 6px #00000056;
 }
 
 aside.aside-2 {
@@ -130,5 +143,19 @@ div.video > iframe {
     left: 5%;
     width: 90%;
     height: 90%;
+    border-radius: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+    padding: 1px;
+}
+
+a:hover {
+    color: var(--roxo-preto);
+    background-color: var(--branco-claro);
+    padding: 1px;
+    border-radius: 5px;
 }
 
